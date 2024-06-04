@@ -1,0 +1,464 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+
+
+    color: rgb(251, 246, 246);
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main,.fun-main{
+    position: relative; 
+    z-index: 1;
+    height: 100%;
+    background-color: rgb(20, 19, 19);
+
+}
+nav .logo h1{
+    color: white;
+}
+.about-us-overlay{
+    position: absolute;
+    width: 100%;
+    height: 0vh;
+    background-color: antiquewhite;
+    display: none;
+    /* z-index: 3; */
+    z-index: 0;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 3vw;
+    transition: all ease 1s;
+}
+.category-overlay{
+    position: absolute;
+    width: 100vw;
+    height: 0vh;
+    background-color: antiquewhite;
+    display: none;
+    /* z-index: 3; */
+    z-index: 0;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 3vw;
+    transition: all ease 1s;
+}
+.category-overlay .text .opt-elem ul li,a{
+    color: black;
+}
+.about-us-overlay .text p,h1{
+    color: black;
+}
+.about-us-overlay h1{
+    position: absolute;
+    left:45%;
+}
+.about-us-overlay .text ol li{
+    color: black;
+}
+.about-us-overlay .top h1{
+    color: black;
+    font-weight: 500;
+    font-size: 4vw;
+}
+.category-overlay .top h1{
+    color: black;
+    font-weight: 500;
+    font-size: 4vw;  
+    position: absolute;
+    left:45%; 
+}
+.about-us-overlay .text{
+    background-color: antiquewhite;
+    color: black;
+    z-index: 2;
+    padding: 100px;
+}
+.about-us-overlay .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.category-overlay .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-us-overlay .top .progress,.cross{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.about-us-overlay .text p,li{
+    color: black;
+}
+.category-overlay .top .progress,.cross{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.cross {
+    cursor: pointer;
+}
+nav{
+    height: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vw;
+}
+nav img{
+    width: 4.5vw;
+}
+nav a{
+    font-size: 1.5vw;
+    margin-right: 3vw;
+    text-decoration: none;
+    color: white;
+}
+header{
+    margin-top: 2vw;
+    display: flex;
+}
+.explore-btn{
+    background-color:white;
+    color: black;
+    border-radius: 9999px;
+    padding: 10px;
+    font-size: 1vw;
+    font-weight: 700;
+    margin-top: 1vw;
+    margin-left: .9vw;
+    position: absolute;
+    text-align: center;
+}
+header img {
+    margin-top: 3.5vw;
+    width: 30vw;
+    border-radius: 10px;
+}
+.header-left{
+    padding: 3vw;
+
+}
+.header-left h1{
+    font-size: 6vw;
+    font-weight: 500;
+}
+.header-left p{
+    color: rgba(246, 247, 247, 0.603);
+    margin-left: 1vw;
+}
+footer{
+    border-top: 0.2vw solid rgba(255, 254, 254, 0.454);
+    padding: 1vw;
+    background-color: rgb(20, 19, 19); 
+}
+
+
+
+/* funExplore page */
+.option-div {
+    padding: 3vw;
+
+    background-color: rgb(20, 19, 19);
+
+}
+.card{
+    border-radius: 3px;
+    display: flex;
+    background-color: wheat;
+    color: black;
+    margin-bottom: 5px;
+}
+.card img{
+    border-radius: 3px;
+
+    width: 20%;
+    height: 20%;
+}
+.card-bottom {
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: wheat;
+}
+.card-bottom p{
+    color: black;
+
+}
+.card-bottom button{
+    background-color: black;
+    padding: 4px;
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    right: 10%;
+    cursor: pointer;
+}
+
+.fun-main{
+    height: 100%;
+}
+
+
+.mobile-aboutUs{
+    display: none;
+}
+@media (max-width:600px) {
+    html,body{
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    body{
+        background-color: rgb(20, 19, 19);
+    }
+    nav img{
+        display: none;
+    }
+    nav{
+        margin-top: 20px;
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw;
+        border-bottom: 2px solid grey;
+        padding-bottom: 40px;
+    }
+    nav a:nth-child(1){
+        display: none;
+    }
+    nav a{
+        font-size: 4vw;
+        margin-right: 3vw;
+        text-decoration: none;
+        color: white;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    header img {
+        margin-top: 3.5vw;
+        width: 70vw;
+        height: 40vw;
+        border-radius: 10px;
+    }
+    .header-left{
+        padding: 10vw;
+    }
+    .header-left h1{
+        font-size: 10vw;
+        font-weight: 500;
+    }
+    .header-left p{
+        color: rgba(246, 247, 247, 0.603);
+        margin-top: 30px;
+        margin-left: 1vw;
+        margin-bottom: 20px;
+    }
+    .header-right{
+        margin-top: 20px;
+        margin-left: 25%;
+    }
+    footer{
+        border-top: 0.2vw solid rgba(255, 254, 254, 0.454);
+        padding: 1vw;
+        background-color: rgb(20, 19, 19);
+        height: 30px;
+        width: 100%;
+        /* position: absolute;
+        bottom: 5%; */
+    }
+    .mobile-aboutUs{
+        display: block;
+        padding: 50px;
+
+    }
+    .mobile-aboutUs .top h1{
+        color: white;
+        font-weight: 500;
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .mobile-aboutUs .text p,li,h1{
+        color: white;
+    }
+    .mobile-aboutUs h1{
+        font-weight: 500;
+    }
+    .mobile-aboutUs ol{
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .explore-btn{
+        background-color:white;
+        color: black;
+        border-radius: 9999px;
+        width: 150px;
+        padding: 20px;
+        font-size: 19px;
+        font-weight: 700;
+        margin-top: 1vw;
+        margin-left: .9vw;
+        
+        position: absolute;
+        text-align: center;
+    }
+    .category-overlay{
+        padding: 50px;
+    }
+    .category-overlay .top h1{
+     font-size: 30px;
+    }
+    .opt-elem{
+        margin-top: 50px;
+        font-size: 30px;
+        margin-left: 35px;
+    }
+    .about-us-overlay{
+        position: absolute;
+        width: 100%;
+        height: 0vh;
+        background-color: antiquewhite;
+        display: none;
+        /* z-index: 3; */
+        z-index: 0;
+        bottom: 0;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        /* padding: 3vw; */
+        padding: 50px;
+
+
+        transition: all ease 1s;
+    }
+    .about-us-overlay .top h1{
+        font-size: 30px;
+    }
+    .about-us-overlay .text{
+        padding: 0;
+        margin-top: ;
+    }
+
+    .option-div {
+        margin-top: 20px;
+        padding: 3vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .card-bottom button{
+        background-color: black;
+        padding: 4px;
+        border-radius: 5px;
+        border: none;
+        width: 100px;
+        position: absolute;
+        left: 70%;
+        top:16%;
+    }
+    
+}
+
+.sublime-overlay {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: none;
+    z-index: 0;
+    bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 3vw;
+    transition: all ease 1s;
+    opacity: 0;
+}
+
+.sublime-overlay .text p, 
+.sublime-overlay .text h1 {
+    color: black;
+}
+
+.sublime-overlay .text ol li {
+    color: black;
+}
+
+.sublime-overlay .top h1 {
+    color: black;
+    font-weight: 500;
+    font-size: 4vw;
+}
+
+.sublime-overlay .top .progress, 
+.cross {
+    position: fixed;
+    top: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.sublime-overlay .text {
+    background-color: antiquewhite;
+    color: black;
+    z-index: 2;
+    padding: 100px;
+}
+
+.sublime-overlay .top {
+   
+    
+}
+.sublime-overlay .top h1{
+    position: absolute;
+    left:30%;
+}
+.cross {
+    right: 10px;
+}
+
+.progress-container {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 20;
+    height: 20;
+}
+
+.progress-circle {
+    transform: rotate(-90deg);
+    overflow: visible;
+}
+
+circle {
+    fill: none;
+    stroke-width: 2;
+}
+
+circle:first-child {
+    stroke: #e6e6e6;
+}
+
+.progress-bar {
+    stroke: black;
+    stroke-dasharray: 94; /* 2 * PI * 45 (radius) */
+    stroke-dashoffset: 94;
+    transition: stroke-dashoffset 0.3s;
+}

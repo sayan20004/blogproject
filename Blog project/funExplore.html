@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Category</title>
+
+    <link rel="stylesheet" href="/assets/style.css">
+    <style>
+        .main{
+            height: 100%;
+            background-color: rgb(20, 19, 19);
+
+        }
+        @media (max-width:600px) {
+            footer{
+            position: absolute; 
+            bottom: 6%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="about-us-overlay">
+        
+    </div>
+    <div class="category-overlay">
+        <div class="top">
+            <div class="progress"></div>
+            <h1> Choose </h1>
+            <div class="cross"></div>
+        </div>
+        <div class="text">
+            <div class="opt-elem">
+                <ul>
+                    <li>
+                        <a href="funExplore.html">Fun Eploration</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="sublime-overlay">
+        <!-- The content will be dynamically injected here -->
+    </div>
+    <div class="fun-main">
+        <nav>
+            <div class="logo">
+                <h1>BB.</h1>
+            </div>
+            <div class="navlinks">
+                <a href="./index.html">Home</a>
+                <a href="#" id="category">Category</a>
+                <a href="#" id="aboutus">About Us</a>
+            </div>
+        </nav>
+
+        <div class="option-div">
+            <div class="card">
+                <img src="./assets/VS Code.png" alt="card-img">
+                <div class="card-bottom">
+                    <div class="card-title">
+                        <h1> Live server in Sublime</h1>
+                    </div>
+                    <div class="card-desc">
+                        <p>If you don't have vs code or maybe you are not aware of the term live server in web development. This will help you out.</p>
+                    </div>
+                    <div class="card-button">
+                        <button id="sublimeOpen">Read</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       <!-- <footer class="fun-footer">
+            <center>&copy; All right reserved</center>
+        </footer>  -->
+    </div>
+
+    <script src="/js/content.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
